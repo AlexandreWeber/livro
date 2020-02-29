@@ -5,9 +5,9 @@ Nesse capítulo iremos ver sobre os seguintes itens:
 
 **IF, IF ELSE** <br/>
 **SWITCH** <br/>
+**WHILE** <br/>
 **FOR, FOR IN e FOR OF** <br/>
 **BREAK/CONTINUE** <br/>
-**WHILE** <br/>
 **LABEL** <br/>
 
 **IF**
@@ -18,25 +18,25 @@ Estrutura do comando:
 
 ```
 if (condição1)
-	...execução1
+ ...execução1
 else if (condição2)
-	...execução2
+ ...execução2
 else
-	...execução3
+ ...execução3
 ```
 ```
 if (condição1) {
-	...execução1
-	...execução1.1
-	...execução1.2
+ ...execução1
+ ...execução1.1
+ ...execução1.2
 } else if (condição2) {
-	...execução2
-	...execução2.1
-	...execução2.2
+ ...execução2
+ ...execução2.1
+ ...execução2.2
 } else {
-	...execução3
-	...execução3.1
-	...execução3.2
+ ...execução3
+ ...execução3.1
+ ...execução3.2
 }
 ```
 Vamos ver alguns exemplos de utilização do IF.
