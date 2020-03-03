@@ -267,9 +267,7 @@ switch (diaDaSemana) {
   	break;
 }
 ```
-**WHILE, DO...WHILE**
-
-WHILE
+**WHILE**
 
 O comando while cria um laço de repetição que executa um determinado trecho de código enquanto uma determinada condição testada retornar true. No while a condição é avaliada antes da execução do trecho de código.
 
@@ -295,3 +293,5 @@ while(contador <= 10) {
 ```
 
 Um ponte importante é a linha em que a variável contador é incrementada, sem isso o while entraria em um laço infinito, visto que contador seria sempre menor igual a 10.
+
+**DO...WHILE**
