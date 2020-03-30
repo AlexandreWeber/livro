@@ -295,3 +295,82 @@ while(contador <= 10) {
 Um ponte importante é a linha em que a variável contador é incrementada, sem isso o while entraria em um laço infinito, visto que contador seria sempre menor igual a 10.
 
 **DO...WHILE**
+
+**FOR**
+
+O comando FOR cria um laço de repetição que é estruturado em três expressões opcionais separadas por ponto e vírgula (;). O FOR é comumente utilizado para percorrer valores de um array.
+
+**Estrutura do comando:**
+for ([expressão1]; [expressão2]; [expressão3]) {
+  ...execução
+}
+
+**Expressão1:**
+É geralmente utilizado para declarar e iniciar a variável contadora. Essa expressão é opcional, pode ser removida do comando.
+
+**Expressão2:**
+É geralmente utilizado para validar se o trecho de código dentro do FOR será executado. Essa expressão é opcional, caso seja omitida ela sempre será avaliada como verdadeira, com isso a responsabilidade por abandonar a execução deverá ser implementada manualmente.
+
+**Expressão3:**
+Expressão executada no final de cada interação, normalmente é utilizada para incrementar a variável contadora.
+
+O uso das chaves {} no FOR é semelhante ao IF, é utilizada para indicar quando existem mais de uma linha para executar dentro do trecho de execução do FOR.
+
+Vamos ver alguns exemplos do FOR para percorrer uma lista de usuários. Abaixo o exemplo mais comum e provavelmente a forma mais utilizada.
+
+```
+const usuarios = ["Alexandre", "Ariane", "Douglas", "Maria", "Mariela"];
+
+// Utilizando as três expressõe
+// 1 - Criação e inicialização do contador
+// 2 - Validação para executar o loop do FOR
+// 3 - Incremento da variável contador
+for (let contador = 0; contador < usuarios.length; contador++) {
+	console.log("Olá " + usuarios[contador]);
+}
+```
+
+Como vimos anteriormente o uso das chaves é opcional, com isso exemplo abaixo poderia ficar dessa forma:
+
+```
+const usuarios = ["Alexandre", "Ariane", "Douglas", "Maria", "Mariela"];
+
+// Utilizando as três expressõe
+// 1 - Criação e inicialização do contador
+// 2 - Validação para executar o loop do FOR
+// 3 - Incremento da variável contador
+for (let contador = 0; contador < usuarios.length; contador++)
+  console.log("Olá " + usuarios[contador]);
+```
+
+Existem outras formas de utilizar o FOR, omitindo as expressões, vamos ver alguns exemplos, porém é importante destacar que essas formas não são comumente utilizadas.
+
+```
+
+const usuarios = ["Alexandre", "Ariane", "Douglas", "Maria", "Mariela"];
+
+// Utilizando as três expressõe
+// 1 - Omitida, a criação e inicialização do contador é feito fora do FOR
+// 2 - Validação para executar o loop do FOR
+// 3 - Incremento da variável contador
+let contador = 0;
+for (; contador < usuarios.length; contador++) {
+  console.log("Olá " + usuarios[contador]);
+}
+```
+
+```
+const usuarios = ["Alexandre", "Ariane", "Douglas", "Maria", "Mariela"];
+
+// Utilizando as três expressõe
+// 1 - Omitida, a criação e inicialização do contador é feito fora do FOR
+// 2 - Omitida, a validação para abandonar o loop foi feita manualmente
+// 3 - Incremento da variável contador
+let contador = 0;
+for (; ; contador++) {
+  if (contador >= usuarios.length) {
+    break;
+  }
+  console.log("Olá " + usuarios[contador]);
+}
+```
